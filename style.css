@@ -432,21 +432,40 @@ svg {
     padding: 2rem 3.5rem;
   }
 
+  .header__nav{
+    position: absolute;
+    left: 0;
+    top: 5rem;
+    width: 100%;
+    padding: 2.5rem;
+    
+  }
+  
   .header__nav ul{
     flex-direction: column;
-    /* position: fixed;
-    left: -100%;
-    top: 5rem; */
+    width: max-content;
+    /* margin: 0 auto; */
+    align-items:flex-start;
+    
 
+    li{
+      width: 100%;
+      display: flex;
+    }
   }
 
   i{
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .header__nav.showing {
     display: block;
+    backdrop-filter: blur(0.75rem);
+    transition: 0.3s;
+    background-color:rgba(255,255,255,0.75);
+    
+
   }
 
   .header_hamburger {
@@ -473,6 +492,11 @@ svg {
   .header__hero p {
     font-size: 1.25rem;
     width: 47.125rem;
+  }
+
+  .header__hero div i{
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   .main__image {
@@ -545,8 +569,8 @@ svg {
   }
 
   i{
-    width: 0.666875rem;
-    height: 0.666875rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .header_hamburger {
@@ -573,6 +597,11 @@ svg {
     height: 2.75rem;
     width: 9.5rem;
     border-radius: 0.5rem;
+  }
+
+  .header__hero div i{
+    height: 0.66688rem;
+    width: 0.66688rem;
   }
 
   .header__hero div a:nth-of-type(1) {
